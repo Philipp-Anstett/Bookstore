@@ -1,0 +1,255 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  scrollbar-color: rgb(181, 222, 255) rgb(207, 177, 195);
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(./assets/png/book.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  margin: 0px;
+  background: linear-gradient(
+    to right,
+    rgb(160, 240, 253),
+    rgb(102, 160, 209),
+    rgb(135, 50, 248),
+    rgb(203, 74, 116),
+    rgb(246, 78, 133),
+    rgb(212, 237, 119)
+  );
+  background-clip: text;
+  color: transparent;
+}
+.logo {
+  height: 80px;
+}
+.book-container {
+  max-width: 1440px;
+  height: 100vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 400px;
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+  margin-top: 16px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.book {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/png/book-background.png);
+  height: 400px;
+  width: 300px;
+  border-radius: 16px;
+  color: black;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(181, 174, 174);
+  cursor: pointer;
+}
+.book:hover {
+  box-shadow: 24px 24px 24px -8px rgba(9, 166, 201, 0.5);
+}
+.separator {
+  height: 1px;
+  width: 267px;
+  background-color: black;
+  margin-left: 3px;
+}
+#comment-input0 {
+  border-radius: 7px;
+}
+#comment-input1 {
+  border-radius: 7px;
+}
+#comment-input2 {
+  border-radius: 7px;
+}
+#comment-input3 {
+  border-radius: 7px;
+}
+#comment-input4 {
+  border-radius: 7px;
+}
+#comment-input5 {
+  border-radius: 7px;
+}
+#comment-input6 {
+  border-radius: 7px;
+}
+#comment-input7 {
+  border-radius: 7px;
+}
+#comment-input8 {
+  border-radius: 7px;
+}
+#comments0 {
+  overflow-y: hidden;
+  overflow-y: scroll;
+  text-align: start;
+  padding-left: 10px;
+}
+#comments1 {
+  overflow-y: hidden;
+  overflow-y: scroll;
+  text-align: start;
+  padding-left: 10px;
+}
+#comments2 {
+  overflow-y: hidden;
+  overflow-y: scroll;
+  text-align: start;
+  padding-left: 10px;
+}
+#comments3 {
+  overflow-y: hidden;
+  overflow-y: scroll;
+  text-align: start;
+  padding-left: 10px;
+}
+#comments4 {
+  overflow-y: hidden;
+  overflow-y: scroll;
+  text-align: start;
+  padding-left: 10px;
+}
+#comments5 {
+  overflow-y: hidden;
+  overflow-y: scroll;
+  text-align: start;
+  padding-left: 10px;
+}
+#comments6 {
+  overflow-y: hidden;
+  overflow-y: scroll;
+  text-align: start;
+  padding-left: 10px;
+}
+#comments7 {
+  overflow-y: hidden;
+  overflow-y: scroll;
+  text-align: start;
+  padding-left: 10px;
+}
+#comments8 {
+  overflow-y: hidden;
+  overflow-y: scroll;
+  text-align: start;
+  padding-left: 10px;
+}
+#picture0.heart {
+  height: 18px;
+  width: 18px;
+}
+#picture1 {
+  height: 18px;
+  width: 18px;
+}
+#picture2 {
+  height: 18px;
+  width: 18px;
+}
+#picture3 {
+  height: 18px;
+  width: 18px;
+}
+#picture4 {
+  height: 18px;
+  width: 18px;
+}
+#picture5 {
+  height: 18px;
+  width: 18px;
+}
+#picture6 {
+  height: 18px;
+  width: 18px;
+}
+#picture7 {
+  height: 18px;
+  width: 18px;
+}
+#picture8 {
+  height: 18px;
+  width: 18px;
+}
+.price-and-like {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.like {
+  display: flex;
+  justify-content: center;
+}
+.autor {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+.jahr {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+.genre {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+@media (max-width: 800px) {
+  .header {
+    font-size: 48px;
+  }
+}
+@media (max-width: 645px) {
+  .book-container {
+    display: flex;
+    justify-content: center;
+  }
+  .main-container {
+    display: flex;
+    gap: 20px;
+    width: 300px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-top: 50px;
+    height: 417px;
+  }
+  .book {
+    width: 300px;
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    font-size: 32px;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    font-size: 24px;
+  }
+}
